@@ -1,0 +1,2 @@
+# react-template-components
+react-template-components will have templates for all javascript users and contributors. Anyone who wants to refer the work or code for their future projects, can do that by just cloning or downloading zip files. This will be shared work with all contributors. Github could be used as a common platform for depositing individual’s valuable input on any framework or mostly into js dependencies libraries. 
