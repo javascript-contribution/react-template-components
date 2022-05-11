@@ -1,6 +1,14 @@
 version: "3.9"
 
 services:
+  app:
+    build:
+      context: .
+      dockerfile: ./.docker/app/Dockerfile  
+    volumes:
+      - .:/app
+    env_file:
+      - ./.env
   web:
     build: ./.docker/nginx
     ports:
@@ -9,13 +17,4 @@ services:
     depends_on:
       - app
 
-  app:
-    build:
-      context: .
-      dockerfile: ./.docker/app/Dockerfile
-    ports:
-      - "3000:3000"
-    volumes:
-      - .:/app
-    env_file:
-      - ./.env
+  
