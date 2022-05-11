@@ -1,5 +1,7 @@
 FROM node:16.15-alpine AS development
 
+LABEL AUTHOR=srijan
+
 WORKDIR /app
 
 COPY package*.json ./
