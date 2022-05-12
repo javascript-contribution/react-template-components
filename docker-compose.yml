@@ -16,5 +16,3 @@ services:
       - "4430:443"
     depends_on:
       - app
-
-  
