@@ -1,4 +1,4 @@
-FROM node:16.15-alpine AS development
+FROM node:16.15-slim AS development
 
 LABEL AUTHOR=srijan
 
