@@ -1,6 +1,6 @@
-import logo from '../logo.svg';
-import RsuiteStepper from '../Views/Stepper/Library'
-import StepIndex from '../Views/Stepper/Custom';
+import logo from '../Assets/logo.svg';
+import RsuiteStepper from '../Components/Stepper/Library'
+import StepIndex from '../Components/Stepper/Custom';
 
 const routes = [
     {
