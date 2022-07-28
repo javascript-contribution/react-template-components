@@ -51,8 +51,8 @@ const SideBar = () => {
             </Typography>
           </AccordionSummary>
           {home.map((element, index) =>  <AccordionDetails>
-            <Typography key={index+element}>
-              <Link to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
+            <Typography key={element + index}>
+              <Link key={index + ":" + element} to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
                 {element}
               </Link>
             </Typography>
@@ -71,8 +71,8 @@ const SideBar = () => {
           </AccordionSummary>
 
           {forms.map((element, index) =>  <AccordionDetails>
-            <Typography key={index+element}>
-              <Link to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
+            <Typography key={element + index}>
+              <Link key={index + ":" + element} to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
                 {element}
               </Link>
             </Typography>
@@ -91,8 +91,8 @@ const SideBar = () => {
             <Typography sx={{ color: "text.secondary" }}>Stepper</Typography>
           </AccordionSummary>
           {stepper.map((element, index) =>  <AccordionDetails>
-            <Typography key={index+element}>
-              <Link to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
+            <Typography key={element + index}>
+              <Link key={index + ":" + element} to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
                 {element}
               </Link>
             </Typography>
@@ -112,8 +112,8 @@ const SideBar = () => {
           </AccordionSummary>
 
           {chat_bot.map((element, index) =>  <AccordionDetails>
-            <Typography key={index+element}>
-              <Link to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
+            <Typography key={element + index}>
+              <Link key={index + ":" + element} to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
                 {element}
               </Link>
             </Typography>
@@ -132,8 +132,8 @@ const SideBar = () => {
             <Typography sx={{ color: "text.secondary" }}>Sign-In</Typography>
           </AccordionSummary>
           {signIn.map((element, index) =>  <AccordionDetails>
-            <Typography key={index+element}>
-              <Link to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
+            <Typography key={element + index}>
+              <Link key={index + ":" + element} to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
                 {element}
               </Link>
             </Typography>
@@ -153,8 +153,8 @@ const SideBar = () => {
           </AccordionSummary>
 
           {video.map((element, index) =>  <AccordionDetails>
-            <Typography key={index+element}>
-              <Link to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
+            <Typography key={element + index}>
+              <Link key={index + ":" + element} to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
                 {element}
               </Link>
             </Typography>
@@ -175,8 +175,8 @@ const SideBar = () => {
           </AccordionSummary>
         
           {charts.map((element, index) =>  <AccordionDetails>
-            <Typography key={index+element}>
-              <Link to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
+            <Typography key={element + index}>
+              <Link key={index + ":" + element} to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
                 {element}
               </Link>
             </Typography>
@@ -199,8 +199,8 @@ const SideBar = () => {
           </AccordionSummary>
          
           {calculator.map((element, index) =>  <AccordionDetails>
-            <Typography key={index+element}>
-              <Link to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
+            <Typography key={element + index}>
+              <Link key={index + ":" + element} to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
                 {element}
               </Link>
             </Typography>
@@ -222,8 +222,8 @@ const SideBar = () => {
           </AccordionSummary>
          
           {stateManage.map((element, index) =>  <AccordionDetails>
-            <Typography key={index+element}>
-              <Link to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
+            <Typography key={element + index}>
+              <Link key={index + ":" + element} to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
                 {element}
               </Link>
             </Typography>
@@ -245,8 +245,8 @@ const SideBar = () => {
           </AccordionSummary>
          
           {pagination.map((element, index) =>  <AccordionDetails>
-            <Typography key={index+element}>
-              <Link to={element.replace(/\s/g, '-').toLowerCase()} className={"link"}>
+            <Typography key={element + index}>
+              <Link key={index + ":" + element} to={element.replace(/\s/g, '-').toLowerCase()} className={"link"} >
                 {element}
               </Link>
             </Typography>
