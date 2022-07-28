@@ -1,5 +1,5 @@
 import React from "react";
-import StepUI from "../../../Components/Stepper/Custom/ChainedStepper";
+import StepUI from "./Fragments/ChainedStepper";
 
 const StepIndex = () => {
   const [state, setState] = React.useState(1);

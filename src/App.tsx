@@ -1,24 +1,29 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import RouteComponent from "./Utils/Routes";
-import SideBar from "./Views/SideBar";
-import "./App.css";
+import SideBar from "./Components/SideBar";
+import "./Styles/App.css";
+import AppBar from "./Components/AppBar";
+import BottomBar from "./Components/BottomBar";
+import EditSpeedDial from "./Components/EditSpeedDial";
+import { Box } from "@mui/material";
 
 export default function App() {
   return (
     <Router>
-      <div style={{ display: "flex" }}>
+      <Box sx={{ display: "flex", scrollBehavior: "smooth" }}>
+        <AppBar />
         <SideBar />
-        <div style={{ flex: 1, padding: "10px" }}>
+        <div className={"components"}>
           <Routes>
-            <>
-              {RouteComponent.map((route, index) => (
-                <Route key={index} path={route.path} element={<route.main />} />
-              ))}
-            </>
+            {RouteComponent.map((route, index) => (
+              <Route key={index} path={route.path} element={<route.main />} />
+            ))}
           </Routes>
         </div>
-      </div>
+        <EditSpeedDial />
+        <BottomBar />
+      </Box>
     </Router>
   );
 }
